@@ -147,95 +147,119 @@
                         <div class="site-footer__item-inner site-footer__item-inner--text">
                             <p class="h2">نحن معك دائما</p>
                             <img src="{{ 'dove.png' | file_url }}" style="max-width: 200px">
-
                         </div>
                     </div>
                 </div>
                 {%- assign socials = "Facebook Twitter Pinterest Instagram Tumblr Snapchat YouTube Vimeo" | split: ' ' -%}
 
-                <div class="page-width">
-                    <div class="grid grid--no-gutters small--text-center grid--footer-float-right">
-                        {%- if show_selectors -%}
-                            <div class="grid__item one-half small--one-whole">
-                                {%- form 'localization', class: 'selectors-form' -%}
-                                    {%- if locale_selector -%}
-                                        <div class="selectors-form__item">
-                                            <h2 class="visually-hidden" id="lang-heading">
-                                                {{ 'general.language.dropdown_label' | t }}
-                                            </h2>
 
-                                            <div class="disclosure" data-disclosure-locale>
-                                                <button type="button" class="disclosure__toggle" aria-expanded="false"
-                                                        aria-controls="lang-list" aria-describedby="lang-heading"
-                                                        data-disclosure-toggle>
-                                                    {{ form.current_locale.endonym_name }}
-                                                </button>
-                                                <ul id="lang-list" class="disclosure-list" data-disclosure-list>
-                                                    {% for locale in form.available_locales %}
-                                                        <li class="disclosure-list__item {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}">
-                                                            <a class="disclosure-list__option" href="#"
-                                                               lang="{{ locale.iso_code }}"
-                                                               {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %}
-                                                               data-value="{{ locale.iso_code }}" data-disclosure-option>
-                                                                {{ locale.endonym_name }}
-                                                            </a>
-                                                        </li>
-                                                    {%- endfor -%}
-                                                </ul>
-                                                <input type="hidden" name="locale_code" id="LocaleSelector"
-                                                       value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
-                                            </div>
+                <div class="grid grid--no-gutters small--text-right grid--footer-float-left">
+                    {%- if show_selectors -%}
+                        <div class="grid__item one-half small--one-whole">
+                            {%- form 'localization', class: 'selectors-form' -%}
+                                {%- if locale_selector -%}
+                                    <div class="selectors-form__item">
+                                        <h2 class="visually-hidden" id="lang-heading">
+                                            {{ 'general.language.dropdown_label' | t }}
+                                        </h2>
+                                        <div class="disclosure" data-disclosure-locale>
+                                            <button type="button" class="disclosure__toggle" aria-expanded="false"
+                                                    aria-controls="lang-list" aria-describedby="lang-heading"
+                                                    data-disclosure-toggle>
+                                                {{ form.current_locale.endonym_name }}
+                                            </button>
+                                            <ul id="lang-list" class="disclosure-list" data-disclosure-list>
+                                                {% for locale in form.available_locales %}
+                                                    <li class="disclosure-list__item {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}">
+                                                        <a class="disclosure-list__option" href="#"
+                                                           lang="{{ locale.iso_code }}"
+                                                           {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %}
+                                                           data-value="{{ locale.iso_code }}" data-disclosure-option>
+                                                            {{ locale.endonym_name }}
+                                                        </a>
+                                                    </li>
+                                                {%- endfor -%}
+                                            </ul>
+                                            <input type="hidden" name="locale_code" id="LocaleSelector"
+                                                   value="{{ form.current_locale.iso_code }}" data-disclosure-input/>
                                         </div>
-                                    {%- endif -%}
+                                    </div>
+                                {%- endif -%}
 
-                                    {%- if currency_selector -%}
-                                        <div class="selectors-form__item">
-                                            <h2 class="visually-hidden" id="currency-heading">
-                                                {{ 'general.currency.dropdown_label' | t }}
-                                            </h2>
+                                {%- if currency_selector -%}
+                                    <div class="selectors-form__item">
+                                        <h2 class="visually-hidden" id="currency-heading">
+                                            {{ 'general.currency.dropdown_label' | t }}
+                                        </h2>
 
-                                            <div class="disclosure" data-disclosure-currency>
-                                                <button type="button" class="disclosure__toggle" aria-expanded="false"
-                                                        aria-controls="currency-list" aria-describedby="currency-heading"
-                                                        data-disclosure-toggle>
-                                                    {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
-                                                </button>
-                                                <ul id="currency-list" class="disclosure-list" data-disclosure-list>
-                                                    {% for currency in form.available_currencies %}
-                                                        <li class="disclosure-list__item {% if currency.iso_code == form.current_currency.iso_code %}disclosure-list__item--current{% endif %}">
-                                                            <a class="disclosure-list__option" href="#"
-                                                               {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}
-                                                               data-value="{{ currency.iso_code }}" data-disclosure-option>
-                                                                {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
-                                                            </a>
-                                                        </li>
-                                                    {%- endfor -%}
-                                                </ul>
-                                                <input type="hidden" name="currency_code" id="CurrencySelector"
-                                                       value="{{ form.current_currency.iso_code }}" data-disclosure-input/>
-                                            </div>
+                                        <div class="disclosure" data-disclosure-currency>
+                                            <button type="button" class="disclosure__toggle" aria-expanded="false"
+                                                    aria-controls="currency-list" aria-describedby="currency-heading"
+                                                    data-disclosure-toggle>
+                                                {{ form.current_currency.iso_code }} {%- if form.current_currency.symbol -%}{{ form.current_currency.symbol }}{%- endif -%}
+                                            </button>
+                                            <ul id="currency-list" class="disclosure-list" data-disclosure-list>
+                                                {% for currency in form.available_currencies %}
+                                                    <li class="disclosure-list__item {% if currency.iso_code == form.current_currency.iso_code %}disclosure-list__item--current{% endif %}">
+                                                        <a class="disclosure-list__option" href="#"
+                                                           {% if currency.iso_code == form.current_currency.iso_code %}aria-current="true"{% endif %}
+                                                           data-value="{{ currency.iso_code }}" data-disclosure-option>
+                                                            {{ currency.iso_code }} {%- if currency.symbol -%}{{ currency.symbol }}{%- endif -%}
+                                                        </a>
+                                                    </li>
+                                                {%- endfor -%}
+                                            </ul>
+                                            <input type="hidden" name="currency_code" id="CurrencySelector"
+                                                   value="{{ form.current_currency.iso_code }}" data-disclosure-input/>
                                         </div>
-                                    {%- endif -%}
-                                {%- endform -%}
-                            </div>
-                        {%- else -%}
-                            <div class="grid__item small--hide {{ payment_width_class }} {% if show_payment_icons %}site-footer-item-center-vertically{% endif %}">{{ payment_icon_markup }}</div>
-                        {%- endif -%}
+                                    </div>
+                                {%- endif -%}
+                            {%- endform -%}
+                        </div>
+                    {%- else -%}
+                        <div class="grid__item small--hide {{ payment_width_class }} {% if show_payment_icons %}site-footer-item-center-vertically{% endif %}">{{ payment_icon_markup }}</div>
+                    {%- endif -%}
 
-                        <div class="grid__item {% if show_selectors or show_payment_icons %}one-half{% endif %} small--one-whole site-footer-item-tall">
+
+                    {%- if show_selectors -%}
+                        <div class="grid__item small--hide {{ payment_width_class }}">{{ payment_icon_markup }}</div>
+                    {%- endif -%}
+
+                    <div class="grid__item medium-up--hide {{ payment_width_class }} small--one-whole">{{ payment_icon_markup }}</div>
+
+                    {%- if social_icons and show_selectors -%}
+                        <div class="grid__item small--hide site-footer-item-align-right {% if show_payment_icons %}one-half{% endif %}">
+                            <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}
+                                , {{ shop.name | link_to: routes.root_url }}</small>
+                            <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
+                        </div>
+                    {%- endif -%}
+                </div>
+                <div class="site-footer__content" style="padding-top:16px;">
+                    <div class="site-footer__item site-footer__item--center">
+                        <div class="site-footer__item-inner site-footer__item-inner--text">
+                            <h2 class="h5"><img src="{{ 'email.png' | file_url }}"
+                                                style="margin-bottom:-8px; max-height: 24px">
+                                <a href="mailto:noorfaragcourses@gmail.com">noorfaragcourses@gmail.com</a></h2>
+                        </div>
+                    </div>
+                    <div class="site-footer__item site-footer__item--center">
+                        <div class="site-footer__item-inner site-footer__item-inner--text">
+
                             {%- if social_icons -%}
-                                <ul class="list--inline site-footer__social-icons social-icons site-footer__icon-list">
+                                {% comment %}<ul class="list--inline site-footer__social-icons social-icons site-footer__icon-list">{% endcomment %}
+                                <div class="details" style="margin-bottom:8px;">
                                     {%- for social in socials -%}
                                         {%- assign social_link = social | prepend: 'social_' | append: '_link' | downcase -%}
                                         {%- assign icon_link = social | prepend: 'icon-' | downcase -%}
                                         {%- if settings[social_link] != blank -%}
-                                            <li class="social-icons__item">
-                                                <a class="social-icons__link" href="{{ settings[social_link] | escape }}"
-                                                   aria-describedby="a11y-external-message">
-                                                    {%- include icon_link -%}
-                                                    <span class="icon__fallback-text">{{ social }}</span>
-                                                </a>
-                                            </li>
+                                            {% comment %}<li class="social-icons__item">{% endcomment %}
+                                            <a class="social-icons__link" href="{{ settings[social_link] | escape }}"
+                                               aria-describedby="a11y-external-message">
+                                                {%- include icon_link -%}
+                                                <span class="icon__fallback-text">{{ social }}</span>
+                                            </a>
+                                            {% comment %}</li>{% endcomment %}
                                         {%- endif -%}
                                     {%- endfor -%}
 
@@ -247,7 +271,8 @@
                                             </a>
                                         </li>
                                     {%- endif -%}
-                                </ul>
+                                </div>
+                                {% comment %}</ul>{% endcomment %}
                             {%- else -%}
                                 <div class="small--hide site-footer-item-align-right {% if show_selectors or show_payment_icons %}site-footer-item-center-vertically{% endif %}">
                                     <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}
@@ -255,47 +280,33 @@
                                     <small class="site-footer__copyright-content site-footer__copyright-content-powered-by">{{ powered_by_link }}</small>
                                 </div>
                             {%- endif -%}
+
+
                         </div>
-
-                        {%- if show_selectors -%}
-                            <div class="grid__item small--hide {{ payment_width_class }}">{{ payment_icon_markup }}</div>
-                        {%- endif -%}
-
-                        <div class="grid__item medium-up--hide {{ payment_width_class }} small--one-whole">{{ payment_icon_markup }}</div>
-
-                        {%- if social_icons and show_selectors -%}
-                            <div class="grid__item small--hide site-footer-item-align-right {% if show_payment_icons %}one-half{% endif %}">
-                                <small class="site-footer__copyright-content">&copy; {{ 'now' | date: "%Y" }}
-                                    , {{ shop.name | link_to: routes.root_url }}</small>
-                                <small class="site-footer__copyright-content site-footer__copyright-content--powered-by">{{ powered_by_link }}</small>
-                            </div>
-                        {%- endif -%}
-
+                    </div>
+                    <div class="site-footer__item site-footer__item--center">
+                        <div class="site-footer__item-inner site-footer__item-inner--text">
+                            <h2 class="h5"><img src="{{ 'whatsapp.png' | file_url }}"
+                                                style="margin-bottom:-8px; max-height: 24px">
+                                خدمة العملاء<a href="https://wa.me/1971547412669">+1971547412669</a></h2>
+                        </div>
                     </div>
                 </div>
                 <div class="site-footer__content">
-                    <div class="site-footer__item site-footer__item--center {{ footer_item }}
-            site-footer-newsletter__one-half">
-                        <div class="site-footer__item-inner site-footer__item-inner--text">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="site-footer__content">
                     <div class="site-footer__item site-footer__item--center">
                         <div class="site-footer__item-inner site-footer__item-inner--text">
-                            <h2 class="h4"><a href="#">Terms of service</a></h2>
+                            <h2 class="h5"><a href="#">Terms of service</a></h2>
                         </div>
                     </div>
                     <div class="site-footer__item site-footer__item--center">
                         <div class="site-footer__item-inner site-footer__item-inner--text">
-                            <h2 class="h2"><a href="#">Refund policy</a></h2>
+                            <h2 class="h5"><a href="#">Refund policy</a></h2>
                         </div>
                     </div>
                     <div class="site-footer__item site-footer__item--center">
 
                         <div class="site-footer__item-inner site-footer__item-inner--text">
-                            <h2 class="h4"><a href="#">Privacy policy</a></h2>
+                            <h2 class="h5"><a href="#">Privacy policy</a></h2>
                         </div>
                     </div>
                 </div>
@@ -392,10 +403,11 @@
                 <div class="site-footer__item site-footer__item--center {{ footer_item }}
             site-footer-newsletter__one-half">
                     <div class="site-footer__item-inner site-footer__item-inner--text">
-                        <p class="h2">جميع الحقوق محفوظة | Noor Kaizn</p>
+                        <p>جميع الحقوق محفوظة | Noor Kaizn</p>
                     </div>
                 </div>
             </div>
+
         </footer>
 
     </div>

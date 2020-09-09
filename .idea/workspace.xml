@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e45d4817-bc2a-4bbe-a7d1-3af9b664d500" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/mj-courses-collection.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/mj-custom-content.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/mj-featured-product.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/mj-first-image.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sections/mj-slider-collection.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/mj-product-card-grid.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/mj-slider-product-card-grid.liquid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/page.mj-courses.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/theme.scss.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/assets/theme.scss.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/settings_schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/settings_schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layout/theme.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/layout/theme.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/footer.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/footer.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sections/header.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/sections/header.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/snippets/product-card-grid.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/snippets/product-card-grid.liquid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.liquid" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.liquid" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1h7iKAdSqehrsiEwKveTQ1349dL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="liquid&#10;JSON" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\noor\theme\templates" />
+      <recent name="D:\work\noor\theme\snippets" />
+      <recent name="D:\work\noor\theme\sections" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e45d4817-bc2a-4bbe-a7d1-3af9b664d500" name="Default Changelist" comment="" />
+      <created>1599368464638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599368464638</updated>
+      <workItem from="1599368465774" duration="28186000" />
+      <workItem from="1599541237978" duration="30744000" />
+      <workItem from="1599634351500" duration="1243000" />
+      <workItem from="1599643221603" duration="3493000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="707" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599541270979">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="707" y="379" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599541270979" />
+    <state x="838" y="422" key="Github.ShareDialog" timestamp="1599368570262">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="838" y="422" key="Github.ShareDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599368570262" />
+    <state x="791" y="226" key="Github.UntrackedFilesDialog" timestamp="1599368590990">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="791" y="226" key="Github.UntrackedFilesDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599368590990" />
+    <state x="229" y="163" key="SettingsEditor" timestamp="1599541288850">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="229" y="163" key="SettingsEditor/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599541288850" />
+    <state x="92" y="92" width="1736" height="866" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1599579227506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="92" y="92" width="1736" height="866" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599579227506" />
+    <state x="667" y="65" width="1038" height="845" key="find.popup" timestamp="1599581206552">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="667" y="65" width="1038" height="845" key="find.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599581206552" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1599485164765">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599485164765" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599647019422">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/1920.0.1536.840/0.0.1920.1050@0.0.1920.1050" timestamp="1599647019422" />
+  </component>
+</project>

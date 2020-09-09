@@ -442,7 +442,7 @@
           "zh-CN": "%",
           "zh-TW": "%"
         },
-        "default": 40
+        "default": 0
       },
       {
         "type": "header",
